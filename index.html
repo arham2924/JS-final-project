@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pasta Recipes</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section id="nav">
+      <nav>
+        <div class="nav__info">
+          <h1 class="title">Flavor Haven</h1>
+        </div>
+        <div class="nav__links--list">
+          <ul class="nav__links">
+            <li>
+              <a href="#home" class="nav__link">Home</a>
+            </li>
+            <li>
+              <a href="#recipes" class="nav__link">Recipes</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+    <section id="home">
+      <div class="info">
+        <figure class="info__imgs">
+          <img src="./undraw_cooking_p7m1.svg" class="info__img" alt="" />
+        </figure>
+        <h2 class="sub__title">
+          Welcome to Flavor Haven, your ultimate destination for culinary
+          inspiration and discovery! Whether you're a seasoned chef or a kitchen
+          novice, our expansive collection of recipes is designed to ignite your
+          passion for cooking and guide you on a delicious journey through
+          global cuisines.
+        </h2>
+       
+      </div>
+    </section>
+    <div class="search-container">
+        <input
+          type="text"
+          onkeyup="searchFunction()"
+          id="search-input"
+          name="search"
+          placeholder="Search for Recipes!"
+          class="search__btn"
+        />
+      </div>
+    <section id="recipes">
+      <div class="container">
+        <div class="row">
+          <div class="recipe-list">
+            <div class="recipe">
+              <div class="recipe-card">
+                <div class="recipe-card__container">
+                  <h3 class="recipe__title">Recipes Name</h3>
+                  <figure class="recipes__img">
+                    <img src="" alt="" />
+                  </figure>
+                  <div class="recipe__texts">
+                    <div class="recipe__text">
+                      <p class="recipe__label">Health Labels</p>
+                      <p class="recipe__labels">HealthLabels</p>
+                    </div>
+                    <div class="recipe__text">
+                      <p class="recipe__ingredient">Ingredients</p>
+                      <p class="recipe__ingredients">Ingredients</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
